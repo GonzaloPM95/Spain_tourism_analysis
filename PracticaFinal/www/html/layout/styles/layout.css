@@ -1,0 +1,89 @@
+@charset "utf-8";
+/*
+Template Name: Jovaphile
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("framework.css");
+
+
+#wrapper_row1{background-color: white}
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{padding:30px 0; text-align:center;}
+#header{background-color: white}
+#header *{margin:0; padding:0; line-height:1;}
+#header h1{font-size:36px; letter-spacing:3px;}
+#header p{font-size:.9rem; text-transform:lowercase;}
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:60px 0;}
+
+#pageintro article{display:block; max-width:65%; margin:0 auto; text-align:center;}
+#pageintro article *{word-wrap:break-word;}
+#pageintro .heading{margin-bottom:20px; font-size:6rem;}
+#pageintro p{margin:0; text-transform:uppercase; font-size:1.4rem;}
+#pageintro footer{margin-top:80px;}
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+
+.overlay.light{color:#474747;}
+.overlay.light::after{background-color:rgba(255,255,255,.8);}
+
+
+/* Header */
+#header a{color:inherit;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:90%;}
+
+	#header{}
+
+	#mainav{}
+	#mainav ul{display:none;}
+	#mainav form{display:block;}
+
+	#breadcrumb{}
+
+	.container{}
+	#comments input[type="reset"]{margin-top:10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+
+	#footer{}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+}
